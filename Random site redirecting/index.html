@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect</title>
+    <style>
+        * {
+            text-align: center;
+            justify-content: center;
+        }
+
+        p {
+            background: thistle;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        a {
+            text-align: center;
+            margin: auto;
+            font-size: 18px;
+            padding: 15px 25px;
+            border-radius: 2px;
+            background: powderblue;
+            color: teal;
+            border: 1.5px solid teal;
+            cursor: pointer;
+            position: relative;
+            top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id=timer></p>
+
+    <a id="myButton" onclick="redirect()">Download</a>
+    <!-- <script src="index.js"></script> -->
+    <script>
+        // https://books.goalkicker.com/
+        // https://www.youtube.com/watch?v=PKggf17m4SE
+        // https://www.youtube.com/watch?v=FbwRG2xqmFQ
+        // https://books.goalkicker.com/
+        // https://www.youtube.com/watch?v=sBTk46-O-Rw
+        // https://www.youtube.com/watch?v=rioc6mTWOZs
+        // https://www.youtube.com/watch?v=CWulQ1ZSE3c
+
+
+        // console.log(location.href = 'https://www.youtube.com/');
+
+        let myArr = ['https://books.goalkicker.com/',
+            'https://www.youtube.com/watch?v=PKggf17m4SE',
+            'https://www.youtube.com/watch?v=FbwRG2xqmFQ',
+            'https://books.goalkicker.com/',
+            'https://www.youtube.com/watch?v=sBTk46-O-Rw',
+            'https://www.youtube.com/watch?v=rioc6mTWOZs',
+            'https://www.youtube.com/watch?v=CWulQ1ZSE3c']
+
+        let i = parseInt(Math.random() * myArr.length);
+
+        function redirect() {
+
+            console.log(location.href = myArr[i]);
+
+        }
+
+        let n = 11;
+        let seconds;
+
+        let myBtn = document.getElementById('myButton');
+
+        setInterval(() => {
+
+            do {
+                seconds = --n;
+            } while (seconds < 0);
+
+            document.getElementById('timer').innerText = `Your download file is ready for downloading in ${seconds} seconds.`
+
+            // console.log(seconds, n);
+
+        }, 1000);
+
+        // if (seconds == 0) {
+        //     myBtn.style.display = 'block';
+        // }
+
+    </script>
+
+</body>
+
+</html>

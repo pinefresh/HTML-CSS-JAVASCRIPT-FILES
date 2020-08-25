@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* color: aliceblue; */
+    /* font-size: 20px; */
+}
+body{
+    background: linear-gradient(30deg,rgba(0, 0, 0, 0.37),rgba(0, 0, 0, 0.493)),url(bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: fit-content;
+}
+.container{
+    text-align: center;
+    margin: 70px auto;
+    padding: 10px;
+}
+p,h1{
+    margin: 20px auto;
+    color: aliceblue;
+}
+p{
+    font-size: 25px;
+}
+h1{
+    font-size: 45px;
+}
+input{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: whitesmoke;
+    background: rgb(255, 0, 106);
+    border: 1.3px solid rgb(255, 0, 106);
+}
+input:hover{
+    background: transparent;
+    border: 1.3px solid oldlace;
+}
