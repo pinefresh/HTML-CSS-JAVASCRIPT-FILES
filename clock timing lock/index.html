@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer password</title>
+</head>
+
+<body>
+    <input type="text" id="myInput" placeholder="Enter your password">
+    <button type="button" onclick="check()">submit</button>
+    <script>
+        let totalPass;
+        let hours;
+        let minutes;
+        function check() {
+            let myPass = document.getElementById('myInput').value;
+            // hours = (new Date()).getHours();
+            hours = new Date().getHours();
+            console.log(hours)
+            hours = hours.toString();
+            // console.log(hours);
+            // minutes = (new Date()).getMinutes();
+            minutes = new Date().getMinutes();
+            console.log(minutes)
+            minutes = minutes.toString();
+            totalPass = hours + minutes;
+            // console.log(totalPass)
+            if (myPass == totalPass) {
+                alert('Sucessfully done...!');
+            }
+            else {
+                alert('wrong password !')
+            }
+            console.log(totalPass);
+        }
+    </script>
+</body>
+
+</html>
