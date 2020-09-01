@@ -17,16 +17,18 @@
         function check() {
             let myPass = document.getElementById('myInput').value;
             // hours = (new Date()).getHours();
+
             hours = new Date().getHours();
-            console.log(hours)
             hours = hours.toString();
-            // console.log(hours);
-            // minutes = (new Date()).getMinutes();
+
             minutes = new Date().getMinutes();
-            console.log(minutes)
+
+            // if(minutes.indexOf[0]==)
+            console.log(minutes[0] == '0');
             minutes = minutes.toString();
+
             totalPass = hours + minutes;
-            // console.log(totalPass)
+            console.log(totalPass);
             if (myPass == totalPass) {
                 alert('Sucessfully done...!');
             }
