@@ -13,8 +13,8 @@ function start() {
     // console.log('start')
     hour = 00;
     setInterval(() => {
-        a = ++hour;
-        document.getElementById('hours').innerText = a;
+        c = ++hour;
+        document.getElementById('hours').innerText = c;
     }, 3600000);
 
     minute = 00;
@@ -23,17 +23,18 @@ function start() {
         document.getElementById('minutes').innerText = b;
     }, 60000);
 
-    second = 00;
-    do {
-        // console.log(a);
-        setInterval(() => {
-            // a = ++second;
+    // console.log(a);
+    second = 0;
+    setInterval(() => {
+        do {
+            a = ++second;
             document.getElementById('seconds').innerText = a;
-        }, 1000);
-    } while (a <= 60)
-    if (a == 61) {
-        a = 0;
-    }
+        } while (a > 60);
+        if (a == 60) {
+            a = 0;
+        }
+        console.log(a);
+    }, 100);
 }
 
 function pause() {
