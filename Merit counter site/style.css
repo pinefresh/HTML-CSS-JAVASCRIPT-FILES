@@ -88,7 +88,8 @@ header{
     z-index: 10;
 }
 .counter #note{
-    margin: 3% auto 0;
+    margin: 2% auto 0;
+    font-size: 20px;
 }
 #second button{
     position: relative;
@@ -109,6 +110,7 @@ header{
 }
 .counter p{
     margin: 3% auto;
+    font-size: 18px;
     /* add animation */
 }
 .counter input{

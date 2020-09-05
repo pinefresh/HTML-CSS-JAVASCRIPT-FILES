@@ -10,10 +10,10 @@
 
 <body>
     <header>
-        <div class="navigation"></div>
+        <!-- <div class="navigation"></div> -->
     </header>
     <div class="container">
-        <h1>Welcome To Merit Calculator</h1>
+        <h1>Merit Calculator</h1>
         <p>Std.12<sup>th</sup> is a basic knowledge of our life...</p>
         <button>Count your merit</button>
     </div>
@@ -21,19 +21,19 @@
     <section id="second">
         <div class="counter">
             <div class="board">
-                <input type="text" placeholder="B. Physics marks">
-                <input type="text" placeholder="B. Chemistry marks">
-                <input type="text" placeholder="B. Maths/Bio. marks">
+                <input type="text" id="bphy" placeholder="B. Physics marks">
+                <input type="text" id="bche" placeholder="B. Chemistry marks">
+                <input type="text" id="bmathbio" placeholder="B. Maths/Bio. marks">
             </div>
             <p>Enter your all marks...</p>
             <div class="gujcet">
-                <input type="text" placeholder="G. Physics marks">
-                <input type="text" placeholder="G. Chemistry marks">
-                <input type="text" placeholder="G. Maths/Bio. marks">
+                <input type="text" id="gphy" placeholder="G. Physics marks">
+                <input type="text" id="gche" placeholder="G. Chemistry marks">
+                <input type="text" id="gmathbio" placeholder="G. Maths/Bio. marks">
             </div>
             <p id="note">Note : Here's G means Gujcet and B means Board...</p>
         </div>
-        <button type="button">Count your merit</button>
+        <button type="button" onclick="meritcount()">Count your merit marks</button>
     </section>
 
     <script src="index.js"></script>
