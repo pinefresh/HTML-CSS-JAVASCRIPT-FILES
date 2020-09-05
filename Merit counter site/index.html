@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merit Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,8 +15,9 @@
     </header>
     <div class="container">
         <h1>Merit Calculator</h1>
-        <p>Std.12<sup>th</sup> is a basic knowledge of our life...</p>
-        <button>Count your merit</button>
+        <p>The most important knowledge is understanding what you can't do !</p>
+        <!-- <p>Std.12<sup>th</sup> is a basic knowledge of our life...</p> -->
+        <a href="#second">Count your merit</a>
     </div>
 
     <section id="second">
@@ -25,7 +27,7 @@
                 <input type="text" id="bche" placeholder="B. Chemistry marks">
                 <input type="text" id="bmathbio" placeholder="B. Maths/Bio. marks">
             </div>
-            <p>Enter your all marks...</p>
+            <p id="marksenter">Enter your all marks...</p>
             <div class="gujcet">
                 <input type="text" id="gphy" placeholder="G. Physics marks">
                 <input type="text" id="gche" placeholder="G. Chemistry marks">
@@ -36,6 +38,7 @@
         <button type="button" onclick="meritcount()">Count your merit marks</button>
     </section>
 
+    <footer>Copyright &#169; All Rights Reserved || Site made by Abhi Dadhaniya</footer>
     <script src="index.js"></script>
 </body>
 

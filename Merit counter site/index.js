@@ -12,7 +12,7 @@ function meritcount() {
     // console.log(btotal);
 
     let gtotal = parseFloat(gphy) + parseFloat(gche) + parseFloat(gmathbio);
-    gtotal = ((gtotal / 3) * 40) / 100;
+    gtotal = ((gtotal) * 40) / 120;
     // console.log(gtotal);
 
     let totalmerit = btotal + gtotal;
@@ -20,6 +20,10 @@ function meritcount() {
     // console.log(totalmerit.toFixed(2));
 
     if ((isNaN(bphy) == true) || (isNaN(bche) == true) || (isNaN(bmathbio) == true) || (isNaN(gphy) == true) || (isNaN(gche) == true) || (isNaN(gmathbio) == true)) {
+        alert('Hey ! Please Enter correct marks...');
+        document.getElementById('note').innerText = `Your merit marks are Invalid`;
+    }
+    else if ((bphy == "") || (bche == '') || (bmathbio == '') || (gphy == '') || (gche == '') || (gmathbio == '')) {
         alert('Hey ! Please Enter correct marks...');
         document.getElementById('note').innerText = `Your merit marks are Invalid`;
     }

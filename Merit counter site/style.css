@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 header{
     position: relative;
@@ -29,23 +29,28 @@ header{
 }
 .container h1{
     font-size: 45px;
+    letter-spacing: 1.2px;
 }
 .container p{
-    font-size: 20px;
+    font-size: 17px;
     margin: 5px auto;
+    letter-spacing: 0.5px;
 }
-.container button{
-    margin: 30px auto;
+.container a{
+    position: relative;
+    top: 30px;
+    /* margin: 50px auto; */
     padding: 10px 20px;
     font-size: 16px;
     background: lightblue;
+    text-decoration: none;
     color: black;
     border: 1px solid lightblue;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.2s ease;
 }
-.container button:hover{
+.container a:hover{
     background: transparent;
     border: 1px solid white;
     color: white;
@@ -113,11 +118,26 @@ header{
     font-size: 18px;
     /* add animation */
 }
+.counter #marksenter{
+    animation-name: title;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 .counter input{
     border: none;
     margin: 4px auto;
     padding: 7px 60px;
     border-radius: 3px;
+}
+footer{
+    margin-top: 10px;
+    padding: 20px;
+    background: rgb(17, 17, 17);
+    text-align: center;
+    color: gold;
+    letter-spacing: 0.4px;
 }
 
 @media (max-width:400px){
@@ -128,8 +148,9 @@ header{
         font-size: 35px;
     }
     .container p{
-        font-size: 14px;
+        font-size: 17px;
         margin: 5px auto;
+        letter-spacing: 0.7px;
     }
     .counter{
         width: 50%;
@@ -147,4 +168,12 @@ header{
         margin: 20px auto 0;
     }
     
+}
+@keyframes title{
+    from{
+        transform: scale(1.1)
+    }
+    to{
+        transform: scale(0.9);
+    }
 }
